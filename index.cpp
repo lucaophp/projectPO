@@ -7,7 +7,11 @@ using namespace std;
 
 const int num_of_threads = 2;
 
+<<<<<<< HEAD
 int main2 () {
+=======
+int main () {
+>>>>>>> 6192318f714ceaddfdc6d3612aa354b8643b6b87
 
 	IloEnv env;
 	stringstream logfile;
@@ -30,7 +34,10 @@ int main2 () {
 		vars.add(IloNumVar(env, 0.0, 40.0));
 		vars.add(IloNumVar(env));
 		vars.add(IloNumVar(env));
+<<<<<<< HEAD
 		vars.add(IloNumVar(env));
+=======
+>>>>>>> 6192318f714ceaddfdc6d3612aa354b8643b6b87
 		model.add(IloMaximize(env, vars[0] + 2 * vars[1] + 3 * vars[2]));
 		model.add( - vars[0] +     vars[1] + vars[2] <= 20);
 		model.add(   vars[0] - 3 * vars[1] + vars[2] <= 30);
